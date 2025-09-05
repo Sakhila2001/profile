@@ -28,6 +28,20 @@ const Work = () => {
                   alt={project.title}
                 />
               </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold">{project.title}</h3>
+                <p className="text-slate-900 text-sm">{project.description}</p>
+                <div className="flex flex-wrap gap-2 mt-6">
+                  {project.tech.map((language, index) => (
+                    <span
+                      key={index}
+                      className="px-4 py-1 bg-gray-100 text-xs font-semibold rounded-full"
+                    >
+                      {language}
+                    </span>
+                  ))}
+                </div>
+              </div>
             </div>
           ))}
         </div>
