@@ -3,7 +3,7 @@ import { projectData } from "../assets/asstes";
 
 const Work = () => {
   return (
-    <div id="work" className="py-20">
+    <div id="Work" className="py-20">
       <div className="max-w-7xl mx-auto px-6 py-6">
         <div className="mb-16 text-center">
           <h2 className="text-4xl sm:text-5xl font-bold text-slate-700 mb-6">
