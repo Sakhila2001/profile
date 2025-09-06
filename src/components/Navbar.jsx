@@ -1,7 +1,11 @@
 import React from "react";
 import { navMenu } from "../assets/asstes";
 import { FaArrowRight } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
+
 const Navbar = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="fixed w-full py-4 z-50 backdrop-blur-3xl">
       <div className="max-w-7xl mx-auto px-6">
@@ -25,7 +29,10 @@ const Navbar = () => {
 
           {/* Buttons */}
           <div>
-            <button className="px-8 py-4 border border-zinc-800 rounded-full flex items-center gap-2 cursor-pointer text-slate-500 hover:text-slate-800 hover:translate-y-1 transition duration-300">
+            <button
+              onClick={() => navigate("/resume")}
+              className="px-8 py-4 border border-zinc-800 rounded-full flex items-center gap-2 cursor-pointer text-slate-500 hover:text-slate-800 hover:translate-y-1 transition duration-300"
+            >
               Resume
               <FaArrowRight className="text-gray-500 text-sm" />
             </button>

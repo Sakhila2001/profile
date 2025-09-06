@@ -1,8 +1,12 @@
 import React from "react";
 import { assets, profileData } from "../assets/asstes";
 import { FaCode } from "react-icons/fa6";
+import { useNavigate } from "react-router-dom";
+
 
 const About = () => {
+  const navigate = useNavigate();
+
   return (
     <div id="About" className="py-20">
       <div className="max-w-7xl mx-auto px-6">
@@ -41,7 +45,7 @@ const About = () => {
                 </div>
               ))}
             </div>
-            <button className="px-8 py-4 bg-zinc-700 text-white rounded-full transition duration-300 hover:bg-zinc-900 cursor-pointer">
+            <button  onClick={() => navigate("/resume")} className="px-8 py-4 bg-zinc-700 text-white rounded-full transition duration-300 hover:bg-zinc-900 cursor-pointer">
               Download Resume
             </button>
           </div>
