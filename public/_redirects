@@ -1,0 +1,4 @@
+# Force HTTPS
+http://*  https://%{host}%{uri}  301!
+
+
