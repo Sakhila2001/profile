@@ -3,7 +3,6 @@ import { assets, profileData } from "../assets/asstes";
 import { FaCode } from "react-icons/fa6";
 import { useNavigate } from "react-router-dom";
 
-
 const About = () => {
   const navigate = useNavigate();
 
@@ -35,7 +34,7 @@ const About = () => {
               {profileData.map((data, index) => (
                 <div
                   key={index}
-                  className="w-full h-55 sm:w-50 p-6 border border-zinc-400 rounded hover:border-zinc-600 cursor-pointer hover:border-b-4 hover:border-r-4 hover:border-zinc-800 transition duration-300 hover:translate-y-1"
+                  className="w-full h-55 sm:w-50 p-6 border border-zinc-400 rounded cursor-pointer hover:border-b-4 hover:border-r-4 hover:border-zinc-800 transition duration-300 hover:translate-y-1"
                 >
                   {/* Example icon */}
                   <FaCode className="text-3xl mb-4" />
@@ -45,7 +44,10 @@ const About = () => {
                 </div>
               ))}
             </div>
-            <button  onClick={() => navigate("/resume")} className="px-8 py-4 bg-zinc-700 text-white rounded-full transition duration-300 hover:bg-zinc-900 cursor-pointer">
+            <button
+              onClick={() => navigate("/resume")}
+              className="px-8 py-4 bg-zinc-700 text-white rounded-full transition duration-300 hover:bg-zinc-900 cursor-pointer"
+            >
               Download Resume
             </button>
           </div>
