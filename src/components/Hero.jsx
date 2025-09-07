@@ -34,8 +34,8 @@ const Hero = () => {
 
           {/* image section right side */}
           <div className="flex justify-center">
-            <div className="relative w-72 h-72 sm:w-80 sm:h-80 floating hover:translate-y-1 transition duration-300">
-              <div className="absolute inset-0 rounded-2xl overflow-hidden border-4 border-slate-600/30 glow ">
+            <div className="relative w-72 h-72 sm:w-80 sm:h-80 floating">
+              <div className="absolute inset-0 rounded-2xl overflow-hidden border-4 border-slate-600/30 glow">
                 <img
                   className="w-full h-full object-cover"
                   src={profile}
