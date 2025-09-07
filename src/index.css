@@ -10,7 +10,7 @@ h3,
 h4 {
   font-family: "Orbitron", sans-serif;
 }
-
+/* 
 @keyframes float {
   0%,
   100% {
@@ -18,9 +18,25 @@ h4 {
   }
 }
 
-.float {
+.floating {
   animation: float 6s ease-in-out infinite;
-}
+} */
 .font-orbitron {
   font-family: "Orbitron";
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.floating {
+  animation: float 3s ease-in-out infinite;
 }

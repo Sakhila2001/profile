@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import { FaArrowRight } from "react-icons/fa6";
-import emailjs from "emailjs-com";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const formRef = useRef();
@@ -23,8 +23,11 @@ const Contact = () => {
             type: "success",
             message: "Message sent successfully ✅",
           });
-          formRef.current.reset();
-          setTimeout(() => setAlert({ show: false, type: "", message: "" }), 4000);
+          formRef.current.reset(); // Clear form
+          setTimeout(
+            () => setAlert({ show: false, type: "", message: "" }),
+            4000
+          );
         },
         (error) => {
           setAlert({
@@ -32,7 +35,10 @@ const Contact = () => {
             type: "error",
             message: "Failed to send ❌: " + error.text,
           });
-          setTimeout(() => setAlert({ show: false, type: "", message: "" }), 4000);
+          setTimeout(
+            () => setAlert({ show: false, type: "", message: "" }),
+            4000
+          );
         }
       );
   };
@@ -45,7 +51,8 @@ const Contact = () => {
             Get in <span className="text-teal-800">Touch</span>
           </h1>
           <p className="mb-2">
-            Have a project in mind or just want to say hi? My inbox is always open.
+            Have a project in mind or just want to say hi? My inbox is always
+            open.
           </p>
         </div>
         <div className="max-w-3xl mx-auto">
@@ -92,18 +99,13 @@ const Contact = () => {
         </div>
       </div>
 
-      {/* Sweet Alert */}
+      {/* Fancy Alert Card */}
       <div
-        className={`fixed bottom-10 right-10 px-6 py-4 rounded-2xl shadow-xl text-white font-medium text-center transform transition-all duration-500 ${
+        className={`fixed bottom-10 right-10 px-6 py-4 rounded-lg shadow-lg text-white transform transition-all duration-500 ${
           alert.show
-            ? "opacity-100 translate-y-0 scale-100"
-            : "opacity-0 translate-y-10 scale-90 pointer-events-none"
-        } ${
-          alert.type === "success"
-            ? "bg-teal-600" // matches your theme
-            : "bg-orange-500" // subtle error color matching theme style
-        }`}
-        style={{ minWidth: "250px" }}
+            ? "opacity-100 translate-y-0"
+            : "opacity-0 translate-y-10 pointer-events-none"
+        } ${alert.type === "success" ? "bg-green-600" : "bg-red-600"}`}
       >
         {alert.message}
       </div>
