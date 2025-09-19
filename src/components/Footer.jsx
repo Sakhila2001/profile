@@ -14,7 +14,7 @@ const Footer = () => {
           <div className="flex space-x-6 mb-6 md:mb-0">
             {/* Facebook */}
             <a
-              href="https://facebook.com"
+              href="https://www.facebook.com/sakhila.thami.3"
               target="_blank"
               rel="noopener noreferrer"
               className="text-black hover:text-teal-900 transition"
@@ -26,7 +26,7 @@ const Footer = () => {
 
             {/* Instagram */}
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/sakhila_thami?igsh=MW04OHNydGh3ZzY3MA%3D%3D"
               target="_blank"
               rel="noopener noreferrer"
               className="text-black hover:text-teal-900 transition"
@@ -40,7 +40,7 @@ const Footer = () => {
 
             {/* LinkedIn */}
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/sakhila-thami-a47649260/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-black hover:text-teal-900 transition"
@@ -52,7 +52,7 @@ const Footer = () => {
 
             {/* GitHub */}
             <a
-              href="https://github.com"
+              href="https://github.com/Sakhila2001"
               target="_blank"
               rel="noopener noreferrer"
               className="text-black hover:text-teal-900 transition"
