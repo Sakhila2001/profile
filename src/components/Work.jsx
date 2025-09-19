@@ -31,12 +31,10 @@ const Work = () => {
           {projectData.map((project, index) => (
             <div
               key={index}
-              className="group relative rounded overflow-hidden shadow-lg border border-gray-200 hover:-translate-y-1 transition duration-300"
+              className="group relative rounded overflow-hidden shadow-lg border border-gray-200 hover:-translate-y-1 transition duration-300 cursor-pointer"
+              onClick={() => handleCardClick(index)} // 👈 whole card is clickable
             >
-              <div
-                className="relative w-full h-48"
-                onClick={() => handleCardClick(index)}
-              >
+              <div className="relative w-full h-48">
                 <img
                   src={project.image}
                   alt={project.title}
@@ -47,7 +45,11 @@ const Work = () => {
                 <div
                   className={`absolute inset-0 bg-gradient-to-t from-black/20 via-black/10 to-black/0 flex items-center justify-center gap-4
                     transition-opacity duration-300
-                    ${activeCard === index ? "opacity-100" : "opacity-0 sm:group-hover:opacity-100"}`}
+                    ${
+                      activeCard === index
+                        ? "opacity-100"
+                        : "opacity-0 sm:group-hover:opacity-100"
+                    }`}
                 >
                   {project.demo && (
                     <button
@@ -70,7 +72,9 @@ const Work = () => {
 
               <div className="p-6">
                 <h3 className="text-xl font-bold">{project.title}</h3>
-                <p className="text-slate-900 text-sm mt-2">{project.description}</p>
+                <p className="text-slate-900 text-sm mt-2">
+                  {project.description}
+                </p>
                 <div className="flex flex-wrap gap-2 mt-4">
                   {project.tech.map((language, idx) => (
                     <span
