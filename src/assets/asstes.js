@@ -2,9 +2,7 @@ import {
   FaCode,
   FaDesktop,
   FaMicrochip,
-  FaMobile,
   FaReact,
-  FaRProject,
   FaSchool,
 } from "react-icons/fa6";
 import profileImg from "../assets/profile1.jpg";
@@ -20,86 +18,142 @@ export const skillsData = [
   {
     icon: FaMicrochip,
     title: "Backend",
-    technologies: ["Python", "Postgres", "Redis", "Next.js"],
-  },
-  {
-    icon: FaReact,
-    title: "Frontend",
-    technologies: ["React", "Html", "Css", "Tailwindcss"],
-  },
-  {
-    icon: FaDesktop,
-    title: "Web",
-    technologies: ["Nginx", "Linux", "Wsgi", "Server"],
+    technologies: [
+      "Laravel",
+      "Node.js",
+      "PHP",
+      "REST APIs",
+      "Multi-tenant Architecture",
+    ],
   },
   {
     icon: FaCode,
-    title: "DevOps",
-    technologies: ["Linux", "Git", "Github", "Docker", "Jenkins", "CI/CD"],
+    title: "Programming Languages",
+    technologies: ["C++", "Python", "Java", "PHP", "JavaScript"],
   },
   {
-    icon: FaMobile,
-    title: "Mobile",
-    technologies: ["React Native", "Android", "Flutter", "Java"],
+    icon: FaReact,
+    title: "Frameworks & Libraries",
+    technologies: [
+      "Laravel",
+      "Node.js",
+      "ReactJS",
+      "Tailwind CSS",
+      "Bootstrap",
+      "WordPress",
+    ],
+  },
+  {
+    icon: FaDesktop,
+    title: "Web & CMS",
+    technologies: [
+      "WordPress",
+      "SEO Optimization",
+      "Email Integration",
+      "Responsive Design",
+    ],
+  },
+  {
+    icon: FaCode,
+    title: "DevOps & Tools",
+    technologies: ["Linux", "Git", "GitHub", "Docker", "CI/CD"],
   },
 ];
 
 export const projectData = [
   {
-    title: "Health Care",
+    title: "Techspire Innovation Website",
     description:
-      "Immersive shopping experience with Python, Tailwind, and React",
+      "Corporate website developed with SEO optimization, responsive design, and email integration.",
     image:
-      "https://plus.unsplash.com/premium_photo-1661293879952-c5c093282801?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8cHJvamVjdHxlbnwwfHwwfHx8MA%3D%3D",
-    tech: ["React", "Tailwindcss", "Python"],
-    demo: "https://healthcare-demo.com", // replace with actual URL
-    github: "https://github.com/username/healthcare", // replace with actual repo
+      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60",
+    tech: ["PHP", "Bootstrap", "Laravel", "JavaScript"],
+    demo: "https://techspireinnovation.com.np/",
+    github: "",
   },
   {
-    title: "FurniCraft",
+    title: "Janata Secondary School Website",
     description:
-      "A modern furniture e-commerce platform offering customizable home and office furniture.",
+      "School website with dynamic content management, SEO optimization, and email integration.",
     image:
-      "https://plus.unsplash.com/premium_photo-1684769161054-2fa9a998dcb6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHByb2plY3R8ZW58MHx8MHx8fDA%3D",
-    tech: ["React", "Tailwindcss", "Python"],
-    demo: "https://furnicraft-demo.com",
-    github: "https://github.com/username/furnicraft",
+      "https://images.unsplash.com/photo-1588072432836-e10032774350?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60",
+    tech: ["PHP", "Bootstrap", "Laravel", "JavaScript"],
+    demo: "https://janatasecondaryschool.com/",
+    github: "",
   },
   {
-    title: "Collaboration",
+    title: "Hotel Prime Suite Website",
     description:
-      "A real-time collaborative platform for artists and designers to co-create digital art",
+      "Hotel website with responsive design, booking features, SEO optimization, and email integration.",
     image:
-      "https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHByb2plY3R8ZW58MHx8MHx8fDA%3D",
-    tech: ["React", "Tailwindcss", "Python"],
-    demo: "https://collaboration-demo.com",
-    github: "https://github.com/username/collaboration",
+      "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60",
+    tech: ["WordPress", "PHP", "Bootstrap", "HTML", "CSS", "JavaScript"],
+    demo: "https://hotelprimesuite.com/",
+    github: "",
   },
   {
-    title: "Abmbivista",
-    description: "A mood-based interior design suggestion tool that uses AI",
+    title: "School Management System",
+    description:
+      "Laravel-based system to manage students, teachers, parents, classes, attendance, grades, and notices.",
     image:
-      "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHByb2plY3R8ZW58MHx8MHx8fDA%3D",
-    tech: ["Django", "Tailwindcss", "Python", "Rest"],
-    demo: "https://abmbivista-demo.com",
-    github: "https://github.com/username/abmbivista",
+    "https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60",
+    tech: ["Laravel", "PHP", "MySQL", "JavaScript"],
+    demo: "",
+    github: "https://github.com/Sakhila2001/School_Management_System",
+  },
+  {
+    title: "Case Management System",
+    description:
+      "Laravel system for managing court cases with role-based access control, permissions, and case tracking reports.",
+    image:
+      "https://images.unsplash.com/photo-1589994965851-a8f479c573a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60",
+    tech: ["Laravel", "PHP", "MySQL", "REST APIs"],
+    demo: "",
+    github: "https://github.com/Sakhila2001/court.com",
+  },
+  {
+    title: "Bidyut & ERP Software",
+    description:
+      "Developed RESTful APIs, backend modules, and optimized multi-tenant architecture for electricity and ERP software with roles and permissions.",
+    image:
+      "https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60",
+    tech: ["Laravel", "PHP", "MySQL", "REST APIs", "Multi-tenant Architecture"],
+    demo: "",
+    github: "",
   },
 ];
 
 export const profileData = [
   {
-    icon: FaCode,
-    title: "Language",
-    technologies: ["Python", "Django", "Rest", "React", "Tailwindcss"],
-  },
-  {
     icon: FaSchool,
     title: "Education",
-    technologies: ["B.Tech in Compuer Science"],
+    technologies: ["Bachelor of Information Management (BIM)"],
   },
   {
-    icon: FaProjectDiagram,
-    title: "Projects",
-    technologies: ["Built more than 25+"],
+    icon: FaCode,
+    title: "Languages",
+    technologies: ["C++", "Python", "Java", "PHP", "JavaScript"],
   },
+  {
+    icon: FaReact,
+    title: "Frameworks & Libraries",
+    technologies: [
+      "Laravel",
+      "Node.js",
+      "ReactJS",
+      "Tailwind CSS",
+      "WordPress",
+    ],
+  },
+  // {
+  //   icon: FaDesktop,
+  //   title: "Databases",
+  //   technologies: ["MySQL", "MongoDB"],
+  // },
+
+  // {
+  //   icon: FaProjectDiagram,
+  //   title: "Projects",
+  //   technologies: ["CMS & WordPress Websites", "School Management System", "Case Management System", "Bidyut & ERP Software"],
+  // },
 ];
