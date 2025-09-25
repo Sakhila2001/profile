@@ -96,7 +96,7 @@ export const projectData = [
     description:
       "Laravel-based system to manage students, teachers, parents, classes, attendance, grades, and notices.",
     image:
-    "https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60",
+      "https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60",
     tech: ["Laravel", "PHP", "MySQL", "JavaScript"],
     demo: "",
     github: "https://github.com/Sakhila2001/School_Management_System",
@@ -110,6 +110,17 @@ export const projectData = [
     tech: ["Laravel", "PHP", "MySQL", "REST APIs"],
     demo: "",
     github: "https://github.com/Sakhila2001/court.com",
+  },
+  {
+    title: "Personal Blog Project",
+    description:
+      "A full-stack blog application with user authentication, role-based permissions, and content management using React, Node.js, Express, MongoDB, and ImageKit for media handling.",
+    image:
+      "https://images.unsplash.com/photo-1593642532871-8b12e02d091c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60",
+
+    tech: ["React", "Node.js", "Express", "MongoDB", "JWT", "ImageKit"],
+    demo: "https://blog-six-zeta-37.vercel.app/",
+    github: "https://github.com/Sakhila2001/blog",
   },
   {
     title: "Bidyut & ERP Software",
