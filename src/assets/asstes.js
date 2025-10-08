@@ -143,7 +143,7 @@ export const profileData = [
   {
     icon: FaCode,
     title: "Languages",
-    technologies: ["C++", "Python", "Java", "PHP", "JavaScript"],
+    technologies: ["PHP", "JavaScript", "Java"],
   },
   {
     icon: FaReact,
