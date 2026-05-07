@@ -44,14 +44,14 @@ const About = () => {
                 </div>
               ))}
             </div>
-            <button
+            {/* <button
               onClick={() => navigate("/resume")}
               className="px-8 py-4 bg-zinc-700 text-white rounded-full transition duration-300 hover:bg-zinc-900 cursor-pointer"
             >
               Download Resume
-            </button>
+            </button> */}
           </div>
-          <div className="order-1 lg:order-2 flex justify-center">
+          <div className="hidden md:flex order-1 lg:order-2 justify-center">
             <div className="relative w-full max-w-md">
               <div className="rounded overflow-hidden">
                 <img
