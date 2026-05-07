@@ -28,7 +28,7 @@ const Navbar = () => {
           </div>
 
           {/* Buttons */}
-          <div>
+          {/* <div>
             <button
               onClick={() => navigate("/resume")}
               className="px-4 py-2 md:px-8 md:py-4 border border-zinc-800 rounded-full flex items-center gap-2 cursor-pointer text-slate-500 hover:text-slate-800 hover:translate-y-1 transition duration-300"
@@ -36,7 +36,7 @@ const Navbar = () => {
               Resume
               <FaArrowRight className="text-gray-500 text-sm" />
             </button>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
