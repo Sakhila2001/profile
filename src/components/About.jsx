@@ -1,7 +1,14 @@
 import React from "react";
 import { assets, profileData } from "../assets/asstes";
-import { FaCode } from "react-icons/fa6";
+//import { FaCode } from "react-icons/fa6";
 import { useNavigate } from "react-router-dom";
+import {
+  FaServer,
+  FaDatabase,
+  FaPlug,
+  FaCode,
+  FaBookOpen,
+} from "react-icons/fa";
 
 const About = () => {
   const navigate = useNavigate();
@@ -10,6 +17,7 @@ const About = () => {
     <div id="About" className="py-20">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          {/* Text + cards — now on the LEFT */}
           <div className="order-1">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
               <span className="text-teal-800">About</span>
@@ -36,30 +44,47 @@ const About = () => {
                   key={index}
                   className="w-full h-55 sm:w-50 p-6 border border-zinc-400 rounded cursor-pointer hover:border-b-4 hover:border-r-4 hover:border-zinc-800 transition duration-300 hover:translate-y-1"
                 >
-                  {/* Example icon */}
                   <FaCode className="text-3xl mb-4" />
-
                   <h1 className="text-xl font-bold mb-4">{data.title}</h1>
                   <p>{data.technologies.join(", ")}</p>
                 </div>
               ))}
             </div>
-            {/* <button
-              onClick={() => navigate("/resume")}
-              className="px-8 py-4 bg-zinc-700 text-white rounded-full transition duration-300 hover:bg-zinc-900 cursor-pointer"
-            >
-              Download Resume
-            </button> */}
           </div>
-          <div className="hidden md:flex order-1 lg:order-2 justify-center">
-            <div className="relative w-full max-w-md">
-              <div className="rounded overflow-hidden">
-                <img
-                  className="w-full h-full object-cover"
-                  src={assets.profileImg}
-                  alr="Profile"
-                />
-              </div>
+
+          {/* Highlights — now on the RIGHT */}
+          <div className="order-2 bg-zinc-50 border border-zinc-200 rounded-2xl p-8 shadow-sm">
+            <h3 className="text-2xl font-bold mb-6 text-teal-800">
+              Quick Highlights
+            </h3>
+
+            <ul className="space-y-4 text-gray-700">
+              <li className="flex items-center gap-3">
+                <FaServer className="text-black text-lg shrink-0" />
+                <span>Backend Developer (Laravel & PHP)</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <FaDatabase className="text-black text-lg shrink-0" />
+                <span>Strong knowledge of MySQL & APIs</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <FaPlug className="text-black text-lg shrink-0" />
+                <span>RESTful API development experience</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <FaCode className="text-black text-lg shrink-0" />
+                <span>Clean code & scalable architecture focus</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <FaBookOpen className="text-black text-lg shrink-0" />
+                <span>Always learning new technologies</span>
+              </li>
+            </ul>
+            <div className="mt-8 p-4 bg-white rounded-lg border">
+              <p className="text-sm text-gray-600">
+                "I enjoy building systems that are not only functional but also
+                efficient and maintainable."
+              </p>
             </div>
           </div>
         </div>

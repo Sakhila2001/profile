@@ -5,7 +5,7 @@ import {
   FaReact,
   FaSchool,
 } from "react-icons/fa6";
-import profileImg from "../assets/profile1.jpg";
+import profileImg from "../assets/Profile.png";
 import { FaProjectDiagram } from "react-icons/fa";
 
 export const assets = {

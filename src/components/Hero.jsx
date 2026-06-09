@@ -1,6 +1,6 @@
 import React from "react";
 import { FaArrowRight } from "react-icons/fa";
-import profile from "../assets/profile1.jpg"; // Add at top
+import profile from "../assets/Profile.png"; // Add at top
 
 const Hero = () => {
   return (
